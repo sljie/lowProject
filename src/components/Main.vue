@@ -132,7 +132,7 @@ export default {
 	padding: 0;
 }
 .content {
-	padding: 20px;
+	//padding: 20px;
 	width: 100%;
 	height: 100%;
 }
