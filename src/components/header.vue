@@ -1,6 +1,8 @@
 <template>
     <div class="header">
-      <span class="title">管理系统</span>
+      <span class="title">
+        <img src="@/assets/innerLCDP.png" alt="">
+      </span>
 
       <div class="marquee-box">
         <marquee :data="marquees"></marquee>
@@ -92,15 +94,18 @@ export default {
 .header {
   display: flex;
   height: 100%;
-  background: #373c42;
+  background: white;
   justify-content: center;
   align-items: center;
 }
 .title {
 
   color: white;
-  height: 60px;
-  line-height: 60px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  display: flex;
+  align-items: center;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -112,11 +117,11 @@ export default {
   padding-right: 20px;
 }
 .right-text {
-  color: white;
+  // color: white;
   span {
     padding: 2px;
     display: inline-block;
-    color: white;
+    // color: white;
   }
 }
 .login-out {

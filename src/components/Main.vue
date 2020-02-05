@@ -1,19 +1,29 @@
 <template>
 <div class="main">
 	<el-container style="height:100%;">
-		<el-header>
-      <my-header></my-header>
-    </el-header>
+		<!-- <el-header>
+			<my-header></my-header>
+		</el-header>
 		<el-container>
 			<el-aside width="200px">
-        <my-menu> </my-menu>
-      </el-aside>
+				<my-menu> </my-menu>
+			</el-aside>
 			<el-main v-loading="loading">
 				<div class="content">
 					<router-view />
 				</div>
-				<!-- <feedback :submit="feedback" @toggle="feedbackOpen = !feedbackOpen" :isOpen="feedbackOpen"></feedback> -->
-      </el-main>
+      		</el-main>
+		</el-container> -->
+		<my-menu> </my-menu>
+		<el-container style="display: flex; flex-direction: column;">
+			<div style="height: 70px; width: 100%">
+				<my-header></my-header>
+			</div>
+			<el-main  style="padding: 10px; background: #ccc">
+				<div class="content" style="background: white">
+					<router-view />
+				</div>
+			</el-main>
 		</el-container>
 	</el-container>
 </div>
@@ -123,5 +133,7 @@ export default {
 }
 .content {
 	padding: 20px;
+	width: 100%;
+	height: 100%;
 }
 </style>
