@@ -1,0 +1,5 @@
+export const LOGIN = 'login'
+export const NOTICES = 'notices'
+export const PERSONS = 'persons'
+export const ADDCOL = 'addColHierarchy'
+export const CHANGE = 'tableList'
