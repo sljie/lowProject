@@ -1,10 +1,14 @@
 <template>
     <div class="menu">
+      <div class="logo-box">
+        <img src="@/assets/logo1.png" alt="">
+      </div>
+      
       <el-menu
       @select="menuSelectChanged"
       :default-active="$route.name"
       class="el-menu-vertical-demo"
-      background-color="#545c64"
+      background-color="rgb(48, 65, 86)"
       text-color="#fff"
       active-text-color="#ffd04b">
       <el-menu-item index="events">
@@ -70,6 +74,15 @@ export default {
 <style lang="scss" scoped>
 .menu {
   height: 100%;
-  background-color: rgb(84, 92, 100);
+  background-color: rgb(48, 65, 86);
+  width: 180px;
+  .logo-box {
+    width: 180px;
+    height: 75px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
 }
 </style>
