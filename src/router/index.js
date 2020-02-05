@@ -4,7 +4,7 @@ import Main from '@/components/Main'
 import Label from '@/components/label'
 import Login from '@/components/login'
 import Events from '@/components/events'
-
+import moduleManagement from '@/views/formManagement/moduleManagement'
 Vue.use(Router)
 
 export default new Router({
@@ -29,7 +29,12 @@ export default new Router({
           name: 'label',
           component: Label
         },
+        {
+          path: '/moduleManagement',
+          name: 'moduleManagement',
+          component: moduleManagement,
+        },
       ]
-    }
+    },
   ]
 })
