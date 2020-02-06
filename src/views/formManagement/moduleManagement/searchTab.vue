@@ -15,7 +15,36 @@
 			</el-table>
     </div>
 		<el-pagination @current-change="handleCurrentChange" :page-sizes="[200]" :page-size="200" background layout="total, sizes, prev, pager, next, jumper" :total="total"> </el-pagination>
-  </div>
+		<el-dialog :title="dialogTitle" :visible.sync="dialogVisible" class="dialog">
+			<el-form :model="form">
+				<el-form-item label="模块编号:" required>
+					<el-input v-model="form.name" size="mini"></el-input>
+				</el-form-item>
+				<el-form-item label="功能编号:" required>
+					<el-input v-model="form.name" size="mini"></el-input>
+				</el-form-item>
+				<el-form-item label="功能名称:" required>
+					<el-input v-model="form.name" size="mini"></el-input>
+				</el-form-item>
+				<el-form-item label="类型:" required>
+					<el-select size="mini" v-model="form.region" placeholder="请选择活动区域">
+						<el-option label="区域一" value="shanghai"></el-option>
+						<el-option label="区域二" value="beijing"></el-option>
+					</el-select>
+				</el-form-item>
+				<el-form-item label="是否在移动端显示:" required>
+					<el-select size="mini" v-model="form.region" placeholder="请选择活动区域">
+						<el-option label="区域一" value="shanghai"></el-option>
+						<el-option label="区域二" value="beijing"></el-option>
+					</el-select>
+				</el-form-item>
+			</el-form>
+			<div slot="footer" class="dialog-footer">
+				<el-button @click="dialogVisible = false">取 消</el-button>
+				<el-button type="primary" @click="dialogVisible = false">确 定</el-button>
+			</div>
+		</el-dialog>
+	</div>
 </template>
 
 <script>
@@ -228,6 +257,11 @@ export default {
 				}
   		],
 			total: 0,
+			dialogTitle:'查询项-新增',
+			dialogVisible:false,
+			form:{
+				name:''
+			}
 		}
 	},
 	mounted() {
@@ -345,6 +379,14 @@ export default {
 					font-weight: bold;
 				}
 			}
+		}
+	}
+	.dialog{
+		.el-form-item__label{
+			width: 150px;
+		}
+		.el-input{
+			width: 200px;
 		}
 	}
 }

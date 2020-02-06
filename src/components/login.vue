@@ -88,7 +88,7 @@ export default {
 
 <style lang="scss" scoped>
 @function toPx($px, $parent) {
-  @return $px / $parent * 100 + %;
+  @return $px / $parent * 100
 }
 .login {
     
