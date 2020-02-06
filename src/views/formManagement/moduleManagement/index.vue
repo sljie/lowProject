@@ -364,6 +364,10 @@ export default {
 					width: 100%;
 					.el-tabs__content {
 						padding: 0px;
+						height: calc(100% - 40px);
+						.el-tab-pane{
+							height: 100%;
+						}
 					}
 				}
       }
