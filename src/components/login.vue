@@ -73,7 +73,8 @@ export default {
       submitForm(formName) {
         this.$refs[formName].validate((valid) => {
           if (valid) {
-            alert('submit!');
+              this.$router.push('moduleManagement')
+            // alert('submit!');
           } else {
             console.log('error submit!!');
             return false;

@@ -11,14 +11,14 @@
       background-color="rgb(48, 65, 86)"
       text-color="#fff"
       active-text-color="#ffd04b">
-      <el-menu-item index="events">
+      <!-- <el-menu-item index="events">
           <i class="el-icon-setting"></i>
           <span slot="title">事件配置</span>
       </el-menu-item>
       <el-menu-item index="label">
         <i class="el-icon-goods"></i>
         <span slot="title">标签管理</span>
-      </el-menu-item>
+      </el-menu-item> -->
       <el-menu-item index="moduleManagement">
         <i class="el-icon-setting"></i>
         <span slot="title">模块管理</span>
