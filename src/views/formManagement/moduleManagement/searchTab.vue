@@ -16,23 +16,41 @@
     </div>
 		<el-pagination @current-change="handleCurrentChange" :page-sizes="[200]" :page-size="200" background layout="total, sizes, prev, pager, next, jumper" :total="total"> </el-pagination>
 		<el-dialog :title="dialogTitle" :visible.sync="dialogVisible" class="dialog">
-			<el-form :model="form">
-				<el-form-item label="模块编号:" required>
+			<el-form :model="form" :inline="true">
+				<el-form-item label="参数属性:" required>
 					<el-input v-model="form.name" size="mini"></el-input>
 				</el-form-item>
-				<el-form-item label="功能编号:" required>
-					<el-input v-model="form.name" size="mini"></el-input>
-				</el-form-item>
-				<el-form-item label="功能名称:" required>
+				<el-form-item label="文本:" required>
 					<el-input v-model="form.name" size="mini"></el-input>
 				</el-form-item>
 				<el-form-item label="类型:" required>
 					<el-select size="mini" v-model="form.region" placeholder="请选择活动区域">
-						<el-option label="区域一" value="shanghai"></el-option>
-						<el-option label="区域二" value="beijing"></el-option>
+						<el-option label="1" value="1"></el-option>
 					</el-select>
 				</el-form-item>
-				<el-form-item label="是否在移动端显示:" required>
+				<el-form-item label="默认值:" >
+					<el-input v-model="form.name" size="mini"></el-input>
+				</el-form-item>
+				<el-form-item label="请求API接口:" >
+					<el-input v-model="form.name" size="mini"></el-input>
+				</el-form-item>
+				<el-form-item label="API参数:" >
+					<el-input v-model="form.name" size="mini"></el-input>
+				</el-form-item>
+				<el-form-item label="下拉选项:" required>
+					<el-select size="mini" v-model="form.region" placeholder="请选择活动区域">
+						<el-option label="1" value="1"></el-option>
+					</el-select>
+				</el-form-item>
+				<el-form-item label="是否翻译:" required>
+					<el-select size="mini" v-model="form.region" placeholder="请选择活动区域">
+						<el-option label="1" value="1"></el-option>
+					</el-select>
+				</el-form-item>
+				<el-form-item label="排序:" required>
+					<el-input v-model="form.name" size="mini"></el-input>
+				</el-form-item>
+				<el-form-item label="匹配原则:" required>
 					<el-select size="mini" v-model="form.region" placeholder="请选择活动区域">
 						<el-option label="区域一" value="shanghai"></el-option>
 						<el-option label="区域二" value="beijing"></el-option>
@@ -369,16 +387,6 @@ export default {
 				height: calc(100% - 50px);
 				overflow: auto!important;
 			}
-			.el-dialog__header {
-				background-color: #eef1f8 !important;
-				height: 35px;
-				padding: 5px 15px 10px !important;
-				.el-dialog__title {
-					color: #0093e0 !important;
-					font-size: 16px !important;
-					font-weight: bold;
-				}
-			}
 		}
 	}
 	.dialog{
@@ -386,7 +394,7 @@ export default {
 			width: 150px;
 		}
 		.el-input{
-			width: 200px;
+			width: 150px;
 		}
 	}
 }
