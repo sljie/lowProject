@@ -19,6 +19,10 @@
         <i class="el-icon-goods"></i>
         <span slot="title">标签管理</span>
       </el-menu-item>
+      <el-menu-item index="moduleManagement">
+        <i class="el-icon-setting"></i>
+        <span slot="title">模块管理</span>
+      </el-menu-item>
     </el-menu>
     </div>
 </template>
