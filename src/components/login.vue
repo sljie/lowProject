@@ -16,7 +16,7 @@
                 </div>
                 <div class="user-form">
                     <el-form :model="ruleForm" status-icon ref="ruleForm"  class="demo-ruleForm">
-                        <div class="word-label">用户名</div>
+                        <div class="word-label first" >用户名</div>
                         <el-form-item  prop="uerName">
                             <el-input type="text" v-model="ruleForm.pass" autocomplete="off"></el-input>
                         </el-form-item>
@@ -95,8 +95,8 @@ export default {
     position: relative;
     background: url('~img/bg-img.png') no-repeat;
     .user {
-        width: 70.7%;
-        height: 78%;
+        width: 70.5%;   // 1396
+        height: 78.10%;
         background: white;
         position: absolute;
         left: 50%;
@@ -105,55 +105,83 @@ export default {
         border-radius: 10px;
         display: flex;
         .left-container {
-            padding-left: 39px;
-            padding-top: 30px;
-            width: 51.8%;
+            height: 100%;// 843.5
+            // 百分比1396
+            margin-left: 2.97%;
+            padding-top: 2.33%;
+            padding-bottom: 2.51%;
+            width: 44.77%; // 625/1396
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
             .logo-box {
+                width: 50.24%; //314px/625;
+                height: 7.48%;// 60px/690;
                 img {
-                    width: 297.5px;
-                    height: 55.5px;
+                    width: 100%;
+                    height: 100%;
+                    // width: 41.15%; //297.5px;
+                    // height: 6.58%;//55.5px;
                 }
             }
             .middle-box {
-                margin-left: 20px;
-                margin-top: 20px;
-                width: 80.55%;
-                height: 73.28%;
+                // margin-left: 20px;
+                // margin-top: 20px;
+                width: 92.32%; //577/625
+                height: 74.5%; // 598 分母 0.9516 * 843.5
+                margin-top: -5%;
+                margin-left: 6.1%;
                 img {
                     width: 100%;
                     height: 100%;
                 }
             }
             .version {
-                margin-top: 30px;
+                // margin-top: 30px;
                 font-size: 14px;
+                color: #333;
+
             }
         }
 
         .right-container {
-            width: 48%;
+            height: 100%;
+            width: 55.23%;
+            padding-left: 4.94%; //69/1396
+            padding-top: 7.95%;
+            position: relative;
+            left: 3%;
             .top-logo {
-                margin-top: 90px; 
+                // width 分母 702   （55.23-4.94）*1396
+                // height分母 776.4 0.9205 * 843.5
+                // margin-top: 90px; 
+                width: 76.57%;
+                height: 11.01%;
                 img {
-                    width: 80%;
-                    height: 10.15%;
+                    width: 100%;
+                    height: 100%;
                 }
             }
             .user-form {
-                width: 85.12%;
-                height: 64.37%;
+                width: 81.55%;
+                height: 73%;
                 border: 1px solid #b3b3b3;
                 border-radius: 5px;
-                padding-left: 40px; 
-                padding-right: 40px; 
+                padding-left: 5.7%; 
+                padding-right: 5.7%; 
                 .word-label {
-                    font-size: 20px;
+                    font-size: 18px;
                     color: #999999;
-                    margin-top: 20px;
+                    margin-top: 5.6%;
+                    &.first {
+                        margin-top: 6.0%;
+                    }
                 }
                 .remark {
-                    font-size: 14px;
+                    font-size: 12px;
                     margin-top: 11px;
+                    color: #333;
                 }
                 .look-pass {
                     position: absolute;
@@ -162,7 +190,7 @@ export default {
                     z-index: 2;
                     top: 50%;
                     transform: translateY(-50%);
-                    right: 1%;
+                    right: 0.8%;
                 }
                 .btn-box {
                     width: 100%;
@@ -170,11 +198,12 @@ export default {
                     justify-content: space-between;
                     
                     .el-button {
-                        width: 41%;
+                        width: 40.1%;
                         border-radius: 30px;
                         font-size: 18px;
                         color: white;
-                        margin-top: 10px;
+                        margin-top: 2.6%;
+                        margin-bottom: 1%;
                         &.right-btn {
                             background: #999999;
                         }
