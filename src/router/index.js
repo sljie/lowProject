@@ -5,6 +5,7 @@ import Label from '@/components/label'
 import Login from '@/components/login'
 import Events from '@/components/events'
 import moduleManagement from '@/views/formManagement/moduleManagement'
+import iconManagement from '@/views/formManagement/iconManagement'
 Vue.use(Router)
 
 export default new Router({
@@ -33,6 +34,11 @@ export default new Router({
           path: '/moduleManagement',
           name: 'moduleManagement',
           component: moduleManagement,
+        },
+        {
+          path: '/iconManagement',
+          name: 'iconManagement',
+          component: iconManagement,
         },
       ]
     },

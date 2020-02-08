@@ -23,6 +23,10 @@
         <i class="el-icon-setting"></i>
         <span slot="title">模块管理</span>
       </el-menu-item>
+      <el-menu-item index="iconManagement">
+        <i class="el-icon-setting"></i>
+        <span slot="title">图标管理</span>
+      </el-menu-item>
     </el-menu>
     </div>
 </template>
