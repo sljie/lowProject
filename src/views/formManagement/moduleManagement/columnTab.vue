@@ -42,7 +42,7 @@
 						<el-option label="1" value="1"></el-option>
 					</el-select>
 				</el-form-item>
-				<el-form-item label="左右列表标志：:" required>
+				<el-form-item label="左右列表标志:" required>
 					<el-select size="mini" v-model="form.region">
 						<el-option label="1" value="1"></el-option>
 					</el-select>
