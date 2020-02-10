@@ -6,6 +6,7 @@ import Login from '@/components/login'
 import Events from '@/components/events'
 import moduleManagement from '@/views/formManagement/moduleManagement'
 import iconManagement from '@/views/formManagement/iconManagement'
+import monacoeditor from '@/views/monacoeditor'
 Vue.use(Router)
 
 export default new Router({
@@ -30,6 +31,11 @@ export default new Router({
           path: '/label',
           name: 'label',
           component: Label
+        },
+        {
+          path: '/monacoeditor',
+          name: 'monacoeditor',
+          component: monacoeditor,
         },
         {
           path: '/moduleManagement',
