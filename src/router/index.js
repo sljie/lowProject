@@ -7,6 +7,7 @@ import Events from '@/components/events'
 import moduleManagement from '@/views/formManagement/moduleManagement'
 import iconManagement from '@/views/formManagement/iconManagement'
 import monacoeditor from '@/views/monacoeditor'
+import formConfig from '@/components/formConfig'
 Vue.use(Router)
 
 export default new Router({
@@ -25,7 +26,7 @@ export default new Router({
         {
           path: '/events',
           name: 'events',
-          component: Events
+          component: formConfig
         },
         {
           path: '/label',
